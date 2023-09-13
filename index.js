@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const SVG = require("./lib/svg.js");
-const {Triangle, Circle, Square} = require("./shapes.js");
+const {Triangle, Circle, Square} = require("./lib/shapes.js");
 const {writeFile} = require("fs/promises");
 
 class CLI{
@@ -58,3 +58,4 @@ class CLI{
         })
     }
 }
+new CLI().run()
